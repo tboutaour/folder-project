@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd >
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.tonibous.osx.move_file</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/python2.7</string>
+        <string>/Users/tonibous/Documents/Programación/Projects/Folder_project/folder_project.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>60</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/tonibous/Documents/test.txt</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tonibous/Documents/test_2.txt</string>
+  </dict>
+</plist>
