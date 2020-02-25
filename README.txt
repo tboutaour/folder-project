@@ -1,18 +1,14 @@
-Pequeño proyecto para añadir una funcionalidad para la gestión de ficheros.
-En el fichero folder_project.py se encuentra el código para que cualquier archivo
-que se aparezca en las descargas se mueva según su extensión a una carpeta del sistema.
+Little project to add functionality to file explorer system.
+folder_project.py have the code to move Download files to other folders by file extension.
+To add functionality you have to add the necessary code to the conditional part.
+To add this program to default in macOS you have to make a plist file.
+In this file you have to assign the folder_project file, as the python interpreter.
 
-El código establece todas las bases necesarias. Para añadir extensiones se deben
-modificar los condicionales.
+cd /Library/LaunchDaemons
 
-Para añadir este programa por defecto en macOS se debe realizar un fichero plist.
-
-En el se debe asignar el fichero folder_project en cuestión, así como el intérprete de python correcto.
-Mover a la carpeta /Library/LaunchDaemons
-
-Al fichero se le debe de dar permisos:
+The file must have some permisions (MacOS):
 sudo chown root /Library/LaunchDaemons/tonibous.osx.move_file.plist
 sudo chgrp wheel /Library/LaunchDaemons/tonibous.osx.move_file.plist
 
-Para cargar el fichero en el sistema:
+System file load:
 sudo launchctl load /Library/LaunchDaemons/tonibous.osx.move_file.plist
